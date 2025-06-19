@@ -1,0 +1,30 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "ValoRealComuns Debug",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/ValoReal.Comuns/ValoReal.Comuns.Api/bin/Debug/net8.0/ValoReal.Comuns.Api.dll",
+      "cwd": "${workspaceFolder}/src/ValoReal.Comuns/ValoReal.Comuns.Api",
+      "stopAtEntry": false
+    },
+    {
+      "name": "ValoRealFgts Debug",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/ValoReal.FGTS/ValoReal.FGTS.Api/bin/Debug/net8.0/ValoReal.FGTS.Api.dll",
+      "cwd": "${workspaceFolder}/src/ValoReal.FGTS/ValoReal.FGTS.Api",
+      "stopAtEntry": false
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Rodar Comuns + FGTS",
+      "configurations": [
+        "ValoRealComuns Debug",
+        "ValoRealFgts Debug"
+      ]
+    }
+  ]
+}

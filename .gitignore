@@ -4,3 +4,4 @@
 appsettings.json
 appsettings.Development.json
 src/ValoReal.Comuns.Api/logs/
+src/ValoReal.FGTS.Api/logs/
